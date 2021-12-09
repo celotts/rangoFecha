@@ -8,6 +8,7 @@ export interface IFechasRango {
 }
 
 export class RangoFecha implements IFechasRango {
+  [x: string]: any;
   validaPeriodoYear() {
     throw new Error("Method not implemented.");
   }
@@ -43,6 +44,7 @@ export class RangoFecha implements IFechasRango {
   }
 
   validaRangoFechas(): boolean {
+    console.log("validaRangoFechas");
     let desde = moment(this.desde, "DD/MM/YYYY");
     let hasta = moment(this.hasta, "DD/MM/YYYY");
     if (desde.isAfter(hasta)) {

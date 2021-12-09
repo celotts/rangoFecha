@@ -9,6 +9,7 @@ export class FechaPeriodoMesAno extends FechaPeriodoMes {
     this.year = year;
   }
   validaPeriodoYear() {
+    console.log("validaPeriodoYear");
     let desde = moment(this.desde, "DD-MM-YYYY");
     let hasta = moment(this.hasta, "DD-MM-YYYY");
     if (this.validaRangoFechas()) {

@@ -11,7 +11,7 @@ const classFactory = new FechaFactory("periodoMesAno");
 
 const factory = classFactory.activeFactory(
   {
-    desde: moment("07/09/2019", "DD/MM/YYYY"),
+    desde: moment("07/09/2021", "DD/MM/YYYY"),
     hasta: moment("08/12/2021", "DD/MM/YYYY"),
   },
   3,

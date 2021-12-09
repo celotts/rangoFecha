@@ -8,6 +8,7 @@ export class FechaPeriodoMes extends RangoFecha {
     this.periodo = periodo;
   }
   validaPeriodo() {
+    console.log("validaPeriodo");
     let desde = moment(this.desde, "DD-MM-YYYY");
     let hasta = moment(this.hasta, "DD-MM-YYYY");
     if (this.validaRangoFechas()) {
