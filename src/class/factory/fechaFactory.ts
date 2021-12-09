@@ -9,7 +9,6 @@ export class FechaFactory {
   }
 
   activeFactory(rangoFecha, periodoMes = 0, periodoAno = 0) {
-    console.log(this.factoryClass);
     if (this.factoryClass == "fecha") {
       return new RangoFecha(rangoFecha);
     }
